@@ -103,7 +103,7 @@ const ReviewComp: React.FC = () => {
             onClick={() =>
               signIn("google", {
                 redirect: true,
-                callbackUrl: "/reviews?success=true",
+                callbackUrl: "/reviews",
               })
             }
           >
