@@ -1,8 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Manrope:wght@200..800&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Tektur:wght@400..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap");
+
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
+  --background: #f5f5f5;
   --foreground: #171717;
+  --primary: #f38c79;
+  --secondary: #ffedfa;
 }
 
 @theme inline {
@@ -11,16 +15,45 @@
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
-
+/* 
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
+    --primary: #f38c79;
+    --secondary: #ffedfa;
   }
-}
+} */
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Manrope", sans-serif;
+  /* height: 100dvh */
+  /* height: 100lvh */
+}
+
+.h1-grad {
+  @apply font-semibold text-xl underline underline-offset-4;
+}
+
+.h2-grad {
+  @apply font-semibold text-2xl underline underline-offset-4;
+}
+
+.cont_box {
+  @apply text-2xl border-2 shadow-2xl rounded-xl;
+}
+
+/* .box_1 {
+  @apply py-12 rounded-xl bg-[var(--secondary)];
+} */
+
+.primary {
+  @apply bg-gradient-to-r from-green-700 via-gray-500 to-purple-500;
+  background-color: var(--primary);
+}
+
+.primary:hover {
+  background-color: #006d81;
 }
