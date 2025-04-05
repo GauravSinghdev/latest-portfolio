@@ -38,7 +38,7 @@ const WorkExp = () => {
       <div className="flex items-center justify-between">
         <div className="h2-grad flex items-center gap-2">
           <div className="h2-grad flex items-center gap-2">
-            Work Experince
+            Work Experience
             <span>
               <ChevronRightCircle className="w-6 h-6 text-[var(--primary)]" />
             </span>
