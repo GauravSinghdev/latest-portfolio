@@ -81,16 +81,16 @@ const HeroSection = () => {
           amazing together!
         </p>
 
-        <div className="flex flex-col sm:flex-row gap-4 mt-4">
+        <div className="flex flex-row gap-4 mt-4">
           <Link
             href="/all-projects"
-            className="px-6 py-3 primary text-white rounded-lg font-semibold hover:bg-primary transition-colors duration-200 hover:scale-110"
+            className="px-6 py-3 bg-gradient-to-r from-blue-500 to-gray-500 text-white rounded-lg font-semibold hover:bg-primary transition-colors duration-200 hover:scale-110"
           >
             View My Work
           </Link>
           <a
             href="/contact"
-            className="px-6 py-3 border border-gray-300 text-gray-900 rounded-lg font-semibold hover:bg-gray-100 transition-colors duration-200"
+            className="px-6 py-3 border border-gray-300 text-gray-900 rounded-lg font-semibold hover:border-gray-400 transition-colors duration-200"
           >
             Get in Touch
           </a>

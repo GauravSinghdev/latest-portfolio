@@ -87,7 +87,7 @@ const Appbar = () => {
 
       <Link
         href={"/"}
-        className="text-4xl font-bold bg-gradient-to-b from-green-500 via-gray-500 to-purple-500 bg-clip-text text-transparent border"
+        className="text-3xl font-bold underline decoration-double decoration-orange-500 decoration-2 underline-offset-4"
       >
         KARA
       </Link>
